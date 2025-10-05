@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Application Form - Kostin Rentals</title>
     <style>
-        /* BASE STYLES (For all devices, defaults for desktop) */
+        /* BASE STYLES (For all devices) */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -15,8 +15,9 @@
             color: #343a40; 
         }
         .container {
-            max-width: 700px;
-            margin: auto;
+            /* Desktop/Large Screen Width: Keeps text line length readable (UX Best Practice) */
+            max-width: 700px; 
+            margin: auto; 
             background: #ffffff;
             padding: 40px;
             border-radius: 12px;
@@ -51,7 +52,6 @@
             font-weight: 600;
             transition: background-color 0.3s, transform 0.1s;
             margin: 10px;
-            /* Ensures button text wraps gracefully on small screens */
             white-space: normal; 
             word-wrap: break-word;
         }
@@ -108,7 +108,7 @@
             color: #555;
         }
 
-        /* UX Best Practice: Better focus on interaction elements */
+        /* Accessibility: Better visual focus for keyboard users */
         a:focus {
             outline: 3px solid #007bff;
             outline-offset: 2px;
@@ -118,28 +118,29 @@
         /* MEDIA QUERIES FOR RESPONSIVENESS (Small Screens/Mobile) */
         @media (max-width: 600px) {
             body {
-                padding: 20px 10px; /* Less padding on the sides */
+                padding: 20px 10px; 
             }
             .container {
-                padding: 25px 15px; /* Smaller container padding */
-                border-radius: 0; /* Remove border radius for full screen width look */
-                box-shadow: none; /* Remove box shadow on small screens */
+                /* Allows content to expand to screen edges on mobile */
+                max-width: 100%; 
+                padding: 25px 15px; 
+                border-radius: 0; 
+                box-shadow: none; 
             }
             h1 {
-                font-size: 1.8em; /* Slightly smaller main heading */
+                font-size: 1.8em; 
             }
             .btn {
-                /* Make buttons full width on small screens for easy tapping */
+                /* Full width buttons on mobile for easy tapping */
                 display: block; 
                 width: 90%; 
                 margin: 10px auto;
-                font-size: 1em; /* Slightly smaller font on buttons */
+                font-size: 1em; 
             }
             .instructions ol li {
-                font-size: 1em; /* Slightly smaller instruction font */
+                font-size: 1em; 
             }
             .instructions ol li::before {
-                /* Smaller step number circles */
                 width: 26px;
                 height: 26px;
                 line-height: 26px;
