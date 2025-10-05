@@ -15,8 +15,9 @@
             color: #343a40; 
         }
         .container {
-            /* **FIXED:** Increased width from 700px to 960px for a wider look on desktop */
-            max-width: 960px; 
+            /* **FIXED:** Removed max-width to allow the container to fill the screen */
+            /* max-width: 960px; <-- Removed this line! */
+            width: 90%; /* Added a percentage width for responsiveness */
             margin: auto; 
             background: #ffffff;
             padding: 40px;
@@ -121,8 +122,8 @@
                 padding: 20px 10px; 
             }
             .container {
-                /* Allows content to expand to screen edges on mobile */
-                max-width: 100%; 
+                /* Ensures padding is consistent on small screens */
+                width: 95%; /* Adjusted width slightly for better edge spacing on mobile */
                 padding: 25px 15px; 
                 border-radius: 0; 
                 box-shadow: none; 
