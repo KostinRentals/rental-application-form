@@ -15,9 +15,8 @@
             color: #343a40; 
         }
         .container {
-            /* **FIXED:** Removed max-width to allow the container to fill the screen */
-            /* max-width: 960px; <-- Removed this line! */
-            width: 90%; /* Added a percentage width for responsiveness */
+            /* **FIXED:** Using a percentage width ensures the box expands to 90% of the screen width */
+            width: 90%; 
             margin: auto; 
             background: #ffffff;
             padding: 40px;
@@ -122,8 +121,8 @@
                 padding: 20px 10px; 
             }
             .container {
-                /* Ensures padding is consistent on small screens */
-                width: 95%; /* Adjusted width slightly for better edge spacing on mobile */
+                /* On small screens, we ensure it uses nearly 100% of the space */
+                width: 95%; 
                 padding: 25px 15px; 
                 border-radius: 0; 
                 box-shadow: none; 
