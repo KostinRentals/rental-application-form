@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Application Form - Kostin Rentals</title>
     <style>
-        /* Modern and Clean CSS (Simplified) */
+        /* BASE STYLES (For all devices, defaults for desktop) */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -36,7 +36,7 @@
             font-size: 1.5em;
         }
 
-        /* Download and Submission Buttons */
+        /* BUTTON STYLES */
         .btn-group {
             text-align: center;
             margin: 30px 0;
@@ -51,6 +51,9 @@
             font-weight: 600;
             transition: background-color 0.3s, transform 0.1s;
             margin: 10px;
+            /* Ensures button text wraps gracefully on small screens */
+            white-space: normal; 
+            word-wrap: break-word;
         }
         .btn-primary {
             background-color: #007bff;
@@ -71,7 +74,7 @@
             transform: translateY(-1px);
         }
 
-        /* Instruction List Styling */
+        /* INSTRUCTION LIST STYLING */
         .instructions ol {
             padding-left: 25px;
             counter-reset: step-counter;
@@ -98,11 +101,49 @@
             line-height: 30px;
             font-weight: bold;
         }
-        .instructions p {
+        .instructions ol li p {
             margin-top: 5px;
             margin-bottom: 0;
             font-size: 0.9em;
             color: #555;
+        }
+
+        /* UX Best Practice: Better focus on interaction elements */
+        a:focus {
+            outline: 3px solid #007bff;
+            outline-offset: 2px;
+        }
+
+
+        /* MEDIA QUERIES FOR RESPONSIVENESS (Small Screens/Mobile) */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px; /* Less padding on the sides */
+            }
+            .container {
+                padding: 25px 15px; /* Smaller container padding */
+                border-radius: 0; /* Remove border radius for full screen width look */
+                box-shadow: none; /* Remove box shadow on small screens */
+            }
+            h1 {
+                font-size: 1.8em; /* Slightly smaller main heading */
+            }
+            .btn {
+                /* Make buttons full width on small screens for easy tapping */
+                display: block; 
+                width: 90%; 
+                margin: 10px auto;
+                font-size: 1em; /* Slightly smaller font on buttons */
+            }
+            .instructions ol li {
+                font-size: 1em; /* Slightly smaller instruction font */
+            }
+            .instructions ol li::before {
+                /* Smaller step number circles */
+                width: 26px;
+                height: 26px;
+                line-height: 26px;
+            }
         }
     </style>
 </head>
