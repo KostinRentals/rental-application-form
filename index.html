@@ -5,100 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Application Form - Kostin Rentals</title>
     <style>
-        /* Basic CSS for a clean look */
+        /* Modern and Clean CSS */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
+            padding: 40px 20px;
+            background-color: #f8f9fa; /* Light background */
+            color: #343a40; /* Dark text */
         }
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
-        h1, h2 {
-            color: #2c3e50;
+        h1 {
+            color: #007bff; /* Primary blue color */
             text-align: center;
+            margin-bottom: 5px;
+            font-size: 2.2em;
         }
-        .instructions {
+        h2 {
+            color: #343a40;
+            margin-top: 30px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e9ecef;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Download and Submission Buttons */
+        .btn-group {
+            text-align: center;
             margin: 30px 0;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background-color: #ecf0f1;
         }
-        ol {
-            padding-left: 20px;
-        }
-        .download-btn {
-            display: block;
-            width: 80%;
-            max-width: 300px;
-            margin: 20px auto;
-            padding: 15px;
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
             text-align: center;
-            background-color: #3498db;
-            color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-size: 1.1em;
-            transition: background-color 0.3s;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.1s;
+            margin: 10px;
         }
-        .download-btn:hover {
-            background-color: #2980b9;
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border: 2px solid #007bff;
         }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            background-color: #28a745; /* Green for submission/action */
+            color: white;
+            border: 2px solid #28a745;
+        }
+        .btn-secondary:hover {
+            background-color: #1e7e34;
+            transform: translateY(-1px);
+        }
+
+        /* Instruction List Styling */
+        .instructions ol {
+            padding-left: 25px;
+            counter-reset: step-counter;
+            list-style: none;
+        }
+        .instructions ol li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+        .instructions ol li::before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #007bff;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-weight: bold;
+        }
+        
+        /* Form Details */
         .form-details {
             margin-top: 40px;
-            border-top: 1px solid #ccc;
             padding-top: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
         }
         .form-details h3 {
-            color: #7f8c8d;
+            margin-top: 0;
+            color: #007bff;
+            font-size: 1.2em;
         }
+        .form-details ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        .important-note {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd; /* Yellow background for warnings */
+            border: 1px solid #ffeeba;
+            border-radius: 6px;
+            color: #856404;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Kostin Rentals - Application Form</h1>
-        <p style="text-align: center;">Download the official application form below to start your rental process.</p>
+        <h1>Kostin Rentals</h1>
+        <p style="text-align: center; font-size: 1.1em;">Official Rental Application Form & Submission Guide</p>
 
-        <a href="Rental Application Form.pdf" class="download-btn" download>
-            Download Application Form (PDF)
-        </a>
-
+        <div class="btn-group">
+            <a href="Rental Application Form.pdf" class="btn btn-primary" download>
+                <i class="fas fa-download"></i> Download Application Form (PDF)
+            </a>
+        </div>
+        
         <div class="instructions">
-            <h2>Submission Instructions</h2>
-            <ol>
-                <li>**Download:** Click the download button above to save the `Rental Application Form.pdf` to your computer.</li>
-                <li>**Fill Out:** Complete all required sections on all 3 pages of the form. [cite_start]Remember to print clearly[cite: 3].
-                    <ul>
-                        [cite_start]<li>The form requires full legal names [cite: 2][cite_start], employment details [cite: 8][cite_start], and previous residences[cite: 17, 25].</li>
-                        [cite_start]<li>Note that no cats are allowed, and dogs are only considered with written approval[cite: 35].</li>
-                        [cite_start]<li>You must initial your choice for the credit check requirement[cite: 38, 39, 40, 43].</li>
-                        [cite_start]<li>Don't forget to sign and date the form[cite: 45, 46, 47].</li>
-                    </ul>
-                </li>
-                <li>**Scan/Photograph:** Once completed and signed, scan or take a clear photograph of all 3 pages.</li>
-                <li>**Submit:** Email the completed form to our rentals team at: <a href="mailto:kostin.rentals@gmail.com">kostin.rentals@gmail.com</a></li>
-            </ol>
-            <p style="text-align: center; font-style: italic; margin-top: 20px;">We will contact you after reviewing your submission.</p>
-        </div>
-
-        <div class="form-details">
-            <h2>Application Form Sections (3 Pages)</h2>
-            <p>The form includes the following main sections:</p>
-            <ul>
-                [cite_start]<li>**Page 1:** Applicant Information [cite: 1] [cite_start](Full Name, Contact Info [cite: 4, 5, 6, 7][cite_start]) and Employment Details[cite: 8].</li>
-                [cite_start]<li>**Page 2:** Previous Residences [cite: 16] [cite_start](Current and Previous Address details [cite: 17, 25]).</li>
-                [cite_start]<li>**Page 3:** Pets [cite: 34][cite_start], Screening Consent & Attestation [cite: 36][cite_start], Credit Check Requirement [cite: 38][cite_start], and Signatures[cite: 45].</li>
-            </ul>
-        </div>
-    </div>
-</body>
-</html>
+            <h2>3 Simple Steps to Apply</h2>
