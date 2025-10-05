@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Application Form - Kostin Rentals</title>
     <style>
-        /* Modern and Clean CSS */
+        /* Modern and Clean CSS (Simplified) */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 40px 20px;
-            background-color: #f8f9fa; /* Light background */
-            color: #343a40; /* Dark text */
+            background-color: #f8f9fa; 
+            color: #343a40; 
         }
         .container {
             max-width: 700px;
@@ -20,10 +20,10 @@
             background: #ffffff;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
         }
         h1 {
-            color: #007bff; /* Primary blue color */
+            color: #007bff; 
             text-align: center;
             margin-bottom: 5px;
             font-size: 2.2em;
@@ -35,32 +35,8 @@
             border-bottom: 2px solid #e9ecef;
             font-size: 1.5em;
         }
-        h3 {
-            color: #007bff;
-            border-left: 4px solid #007bff;
-            padding-left: 10px;
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        .section-content {
-            padding: 10px 0 10px 10px;
-            border-left: 1px dashed #ced4da;
-            margin-left: 10px;
-        }
-        .field {
-            margin-bottom: 8px;
-            font-size: 0.95em;
-        }
-        .field strong {
-            display: inline-block;
-            min-width: 120px;
-            color: #343a40;
-        }
 
-        /* Download and Submission Buttons/Instructions (from previous step) */
+        /* Download and Submission Buttons */
         .btn-group {
             text-align: center;
             margin: 30px 0;
@@ -86,7 +62,7 @@
             transform: translateY(-1px);
         }
         .btn-secondary {
-            background-color: #28a745;
+            background-color: #28a745; 
             color: white;
             border: 2px solid #28a745;
         }
@@ -94,15 +70,18 @@
             background-color: #1e7e34;
             transform: translateY(-1px);
         }
+
+        /* Instruction List Styling */
         .instructions ol {
             padding-left: 25px;
             counter-reset: step-counter;
             list-style: none;
         }
         .instructions ol li {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             position: relative;
-            padding-left: 30px;
+            padding-left: 35px;
+            font-size: 1.1em;
         }
         .instructions ol li::before {
             content: counter(step-counter);
@@ -112,126 +91,57 @@
             top: 0;
             background: #007bff;
             color: white;
-            width: 24px;
-            height: 24px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             text-align: center;
-            line-height: 24px;
+            line-height: 30px;
             font-weight: bold;
         }
-        .important-note {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #fff3cd;
-            border: 1px solid #ffeeba;
-            border-radius: 6px;
-            color: #856404;
+        .instructions p {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 0.9em;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Kostin Rentals</h1>
-        <p style="text-align: center; font-size: 1.1em;">Official Rental Application Form & Submission Guide</p>
+        <p style="text-align: center; font-size: 1.1em;">Official Rental Application Form</p>
 
         <div class="btn-group">
             <a href="Rental Application Form.pdf" class="btn btn-primary" download>
-                <i class="fas fa-download"></i> Download Application Form (PDF)
+                Download Application Form (PDF)
             </a>
         </div>
         
         <div class="instructions">
-            <h2>3 Simple Steps to Apply</h2>
+            <h2>Your 3-Step Application Process</h2>
             <ol>
                 <li>
-                    **Download & Print**
-                    <p>Click the **Download Application Form (PDF)** button above and print all **3 pages** of the form. [cite_start]Please remember to print all legal names clearly[cite: 3].</p>
+                    **Download the PDF File**
+                    <p>Click the button above to download the 3-page `Rental Application Form.pdf` to your device.</p>
                 </li>
                 <li>
-                    **Fill Out Completely**
-                    <p>Complete every section of the form in ink. This includes:</p>
-                    <ul>
-                        <li>Full Applicant and Non-Applicant Details.</li>
-                        <li>Employment and Previous Residence information.</li>
-                        [cite_start]<li>Initialing your choice for the **Credit Check Requirement**[cite: 38, 39, 40, 43].</li>
-                        [cite_start]<li>**Signing and Dating** the final page[cite: 45].</li>
-                    </ul>
-                    <div class="important-note">
-                        **Important Pet Policy:** No cats are allowed. [cite_start]Only dogs will be considered with prior written approval (please detail on a separate sheet)[cite: 35].
-                    </div>
+                    **Fill Out and Sign the Form**
+                    <p>Complete all sections of the form clearly in ink, including your credit check choice and final signature(s) and date(s).</p>
                 </li>
                 <li>
-                    **Submit via Email**
-                    <p>Scan or take a clear photograph of all **3 completed and signed pages** of the application. Attach the files and send them to the submission email address below.</p>
+                    **Send the Completed File**
+                    <p>Scan or photograph all 3 completed pages and email them for submission.</p>
                 </li>
             </ol>
         </div>
         
         <div class="btn-group">
             <a href="mailto:kostin.rentals@gmail.com" class="btn btn-secondary">
-                Submit Your Application to kostin.rentals@gmail.com
+                Submit to kostin.rentals@gmail.com
             </a>
         </div>
 
-        <p style="text-align: center; margin-top: 10px; font-style: italic;">We will contact you shortly after reviewing your submission.</p>
-
-        <div class="form-details">
-            <h2>Application Form Details (Preview)</h2>
-            <p>This is a detailed preview of the information required in the 3-page form. Please be prepared to provide all details.</p>
-
-            [cite_start]<h3>Page 1: Applicant & Employment Details [cite: 1]</h3>
-            <div class="section-content">
-                <h4>APPLICANT INFORMATION</h4>
-                [cite_start]<div class="field"><strong>Full Name(s):</strong> Required (Please print all legal names clearly) [cite: 2, 3]</div>
-                [cite_start]<div class="field"><strong>Phone Number:</strong> Required [cite: 4]</div>
-                [cite_start]<div class="field"><strong>Email Address:</strong> Required [cite: 5]</div>
-                [cite_start]<div class="field"><strong>People in Suite:</strong> Number of people [cite: 6]</div>
-                [cite_start]<div class="field"><strong>Non-Applicants:</strong> Names and ages [cite: 7]</div>
-                
-                <h4>EMPLOYMENT DETAILS</h4>
-                [cite_start]<div class="field"><strong>Occupation & Employer:</strong> Required for each adult [cite: 8, 9]</div>
-                [cite_start]<div class="field"><strong>Employer Contact Info:</strong> Required [cite: 10]</div>
-                [cite_start]<div class="field"><strong>Salary:</strong> Year or Month amount [cite: 11]</div>
-                [cite_start]<div class="field"><strong>Time Employed:</strong> How long you have worked there [cite: 12]</div>
-                [cite_start]<div class="field"><strong>Contact Employer?</strong> YES/NO [cite: 15]</div>
-            </div>
-
-            [cite_start]<h3>Page 2: Previous Residences [cite: 16]</h3>
-            <div class="section-content">
-                <h4>CURRENT ADDRESS</h4>
-                [cite_start]<div class="field"><strong>Address:</strong> Required [cite: 18]</div>
-                [cite_start]<div class="field"><strong>Time Lived There:</strong> How long lived there [cite: 19]</div>
-                [cite_start]<div class="field"><strong>Reason for Leaving:</strong> Required [cite: 20]</div>
-                [cite_start]<div class="field"><strong>Landlord Name & Number:</strong> Required [cite: 21]</div>
-                [cite_start]<div class="field"><strong>Can we contact?</strong> YES/NO [cite: 24]</div>
-
-                <h4>PREVIOUS ADDRESS</h4>
-                [cite_start]<div class="field"><strong>Address:</strong> Required [cite: 26]</div>
-                [cite_start]<div class="field"><strong>Time Lived There:</strong> How long lived there [cite: 27]</div>
-                [cite_start]<div class="field"><strong>Reason for Leaving:</strong> Required [cite: 28]</div>
-                [cite_start]<div class="field"><strong>Landlord Name & Number:</strong> Required [cite: 29]</div>
-                [cite_start]<div class="field"><strong>Can we contact?</strong> YES/NO [cite: 32]</div>
-            </div>
-
-            [cite_start]<h3>Page 3: Consent & Signatures [cite: 33]</h3>
-            <div class="section-content">
-                <h4>PETS</h4>
-                <div class="field"><strong>Policy:</strong> No cats allowed. [cite_start]Only dogs considered with written approval (detail on separate sheet)[cite: 35].</div>
-
-                <h4>SCREENING CONSENT & ATTESTATION</h4>
-                [cite_start]<div class="field">I/we confirm all information provided is true and authorize the landlord/agents to conduct all necessary reference checks[cite: 37].</div>
-
-                <h4>CREDIT CHECK REQUIREMENT</h4>
-                [cite_start]<div class="field">**Applicant Must Initial One Option:** [cite: 39]</div>
-                <ul>
-                    [cite_start]<li>**APPLICANT-PROVIDED REPORT:** Provide your own recent credit report (dated within the last 30 days) from Equifax or Trans Union[cite: 40, 41].</li>
-                    [cite_start]<li>**LANDLORD-INITIATED REPORT:** Consent for the landlord to obtain a credit report via their screening service (e.g., SingleKey) at no cost[cite: 43, 44].</li>
-                </ul>
-
-                <h4>SIGNATURES</h4>
-                <div class="field">**Required:** Applicant 1 Signature, Date, Printed Name. [cite_start]Applicant 2 Signature, Date, Printed Name[cite: 46, 47, 48, 49, 50, 51].</div>
-            </div>
-        </div>
+        <p style="text-align: center; margin-top: 10px; font-style: italic;">We will contact you shortly after receiving your complete application.</p>
         
     </div>
 </body>
